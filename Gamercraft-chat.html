@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineWorld Discord Chat</title>
+  <style>
+    /* Asegura que el widget se escale adecuadamente en todas las pantallas */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #widget-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    widgetbot {
+      /* Limita el tamaño en pantallas grandes */
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      widgetbot {
+        max-width: 100%; /* Asegura que ocupe todo el ancho en móviles */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="widget-container">
+    <widgetbot 
+      channel="967623331991916594" 
+      server="966551494394511430" 
+      height="100%" 
+      width="100%">
+    </widgetbot>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+</body>
+</html>
