@@ -358,5 +358,40 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     };
     run().catch(handleError);
   </script>
+  
+<!-- Botón flotante para descargar la página web -->
+  <button id="descargar-btn">Descargar Juego Offline</button>
+
+  <script>
+    // Función para descargar la página web como un archivo HTML offline
+    function descargarPagina() {
+      const html = document.documentElement.outerHTML;
+      const blob = new Blob([html], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Dino-Game.html';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    // Agregar evento de clic al botón
+    document.getElementById('descargar-btn').addEventListener('click', descargarPagina);
+  </script>
+
+<style>
+    /* Estilo para el botón flotante */
+    #descargar-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </body>
 </html>
