@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mine Blocks</title>
+    <title>Juego Flash con Proporciones</title>
     <script src="ruffle/ruffle.js"></script>
+    <style>
+        /* Estilos para centrado y ajuste proporcional */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000; /* Fondo negro para inmersión */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        #flash-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Fondo para rellenar bordes */
+        }
+        object, canvas {
+            max-width: 100%;
+            max-height: 100%;
+            aspect-ratio: 4 / 3; /* Relación de aspecto predeterminada, cámbiala si es necesario */
+        }
+    </style>
 </head>
 <body>
-    <h1>Mine Blocks</h1>
-    <div id="flash-container">
-        <object data="Mine-Blocks.swf" width="800" height="600"></object>
-    </div>
+    <div id="flash-container"></div>
     <script>
         // Inicializa Ruffle
         const ruffle = window.RufflePlayer.newest();
         const container = document.getElementById("flash-container");
         const player = ruffle.createPlayer();
         container.appendChild(player);
-        player.load("Mine-Blocks.swf");
+
+        // Carga el archivo SWF
+        player.load("Mine-Blocks.swf"); // Cambia "tu-juego.swf" por el nombre de tu archivo
     </script>
 </body>
 </html>
