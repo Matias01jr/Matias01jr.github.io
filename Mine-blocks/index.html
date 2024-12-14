@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mine Blocks</title>
-  <script src="https://cdn.jsdelivr.net/npm/ruffle@3.1.0/ruffle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Blocks</title>
+    <script src="ruffle/ruffle.js"></script>
 </head>
 <body>
-  <ruffle src="Mine-Blocks.swf"></ruffle>
+    <h1>Mine Blocks</h1>
+    <div id="flash-container">
+        <object data="tu-juego.swf" width="800" height="600"></object>
+    </div>
+    <script>
+        // Inicializa Ruffle
+        const ruffle = window.RufflePlayer.newest();
+        const container = document.getElementById("flash-container");
+        const player = ruffle.createPlayer();
+        container.appendChild(player);
+        player.load("tu-juego.swf");
+    </script>
 </body>
 </html>
