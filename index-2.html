@@ -13,19 +13,41 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: var(--bg-color, #f0f0f0);
+            color: var(--text-color, #000);
+            transition: background-color 0.3s, color 0.3s;
         }
         button {
             margin: 10px;
             padding: 15px 30px;
             font-size: 16px;
             cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .theme-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .dark-theme {
+            --bg-color: #333;
+            --text-color: #f0f0f0;
+        }
+        .dark-theme button {
+            background-color: #444;
+            color: #f0f0f0;
+        }
+        .light-theme button {
+            background-color: #ddd;
+            color: #000;
         }
     </style>
 </head>
 <body>
-    <h1>¡Bienvenido a Matias01jr Games!¡Elige un juego!</h1>
-
+    <button class="theme-button" onclick="toggleTheme()">Cambiar Tema</button>
+    <h1>¡Bienvenido a Matias01jr Games! ¡Elige un juego!</h1>
 
     <button onclick="location.href='Minecraft-coloring.html'">Minecraft Coloring</button>
     <button onclick="location.href='Flappy-Minecraft.html'">Flappy Minecraft</button>
@@ -37,13 +59,26 @@
     <button onclick="location.href='index.html'">-------Página anterior-------</button>
     <button onclick="location.href='index-3.html'">-------Página siguiente-------</button>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.body.classList.add(theme + '-theme');
+        });
 
-<script async="" defer="" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3">
-    new Crate({
-        server: '1186628985795391558', // Comunidad de Matias01jr
-        channel: '1186649063219789965' // #reglas
-    })
-</script>
+        function toggleTheme() {
+            let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.classList.remove(currentTheme + '-theme');
+            document.body.classList.add(newTheme + '-theme');
+            localStorage.setItem('theme', newTheme);
+        }
+    </script>
 
+    <script async="" defer="" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3">
+        new Crate({
+            server: '1186628985795391558', // Comunidad de Matias01jr
+            channel: '1186649063219789965' // #reglas
+        })
+    </script>
 </body>
 </html>
