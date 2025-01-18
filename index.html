@@ -58,13 +58,28 @@
     <button onclick="location.href='MineWorld-Discord-Chat.html'">MineWorld Discord Chat</button>
     <button onclick="location.href='index-2.html'">-------Siguiente página-------</button>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.body.classList.add(theme + '-theme');
+        });
 
-<script async="" defer="" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3">
+        function toggleTheme() {
+            let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.classList.remove(currentTheme + '-theme');
+            document.body.classList.add(newTheme + '-theme');
+            localStorage.setItem('theme', newTheme);
+        }
+    </script>
+
+
+    <script async="" defer="" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3">
     new Crate({
         server: '1186628985795391558', // Comunidad de Matias01jr
         channel: '1186649063219789965' // #reglas
     })
-</script>
+    </script>
 
 </body>
 </html>
