@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Flash Pantalla Completa</title>
+    <script src="ruffle/ruffle.js"></script>
+    <style>
+        /* Estilos para asegurar pantalla completa */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000; /* Fondo negro para mejor experiencia */
+        }
+        #flash-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        object, canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="flash-container"></div>
+    <script>
+        // Inicializa Ruffle
+        const ruffle = window.RufflePlayer.newest();
+        const container = document.getElementById("flash-container");
+        const player = ruffle.createPlayer();
+        container.appendChild(player);
+
+        // Carga el archivo SWF
+        player.load("Mine-Blocks.swf"); // Cambia "tu-juego.swf" por el nombre de tu archivo
+    </script>
+</body>
+</html>
