@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego en Pantalla Completa</title>
+    <style>
+        body {
+            margin: 0; /* Elimina los márgenes del cuerpo */
+            overflow: hidden; /* Evita que la página tenga scroll */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://funhtml5games.com?embed=sonic" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: none; z-index: 9999;" frameborder="0" scrolling="no" class="cursor-hover"></iframe>
+</body>
+</html>
