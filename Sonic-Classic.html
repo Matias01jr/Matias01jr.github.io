@@ -2,17 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Sonic Classic</title>
-    <link rel="icon" href="Sonic.png" type="image/png">
+	<link rel="icon" href="Sonic.png" type="image/png">
     <style>
         body {
-            margin: 0; /* Elimina los márgenes del cuerpo */
-            overflow: hidden; /* Evita que la página tenga scroll */
+            margin: 0;
+            overflow: hidden;
+        }
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            z-index: 9999;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://funhtml5games.com?embed=sonic" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: none; z-index: 9999;" frameborder="0" scrolling="no" class="cursor-hover"></iframe>
+    <iframe src="https://funhtml5games.com?embed=sonic" frameborder="0" scrolling="no" class="cursor-hover"></iframe>
 </body>
 </html>
