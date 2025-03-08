@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdie</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: black; }
+        canvas { background: skyblue; border: 4px solid black; display: block; }
+        #startScreen { position: absolute; background: rgba(0,0,0,0.8); width: 320px; height: 480px; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+        #startButton { background: red; color: white; font-size: 20px; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; }
+        #score { position: absolute; color: white; font-size: 30px; top: 10px; left: 10px; }
+    </style>
+</head>
+<body>
+    <div id="startScreen">
+        <button id="startButton">▶️ Jugar</button>
+    </div>
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
+    <div id="score">Puntos: 0</div>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+        const startScreen = document.getElementById("startScreen");
+        const startButton = document.getElementById("startButton");
+        const scoreDisplay = document.getElementById("score");
+
+        let bird = { x: 50, y: 240, width: 20, height: 20, velocity: 0 };
+        let gravity = 0.5; // Gravedad más suave
+        let lift = -8; // Fuerza de salto ajustada
+        let pipes = [];
+        let gameRunning = false;
+        let score = 0;
+        let backgroundX = 0;  // Posición del fondo en movimiento
+        let pipeSpeed = 2;
+
+        const birdImage = new Image();
+        birdImage.src = "https://prod.cloud.rockstargames.com/crews/sc/0556/10149530/publish/emblem/emblem_512.png"; // Imagen de pájaro
+
+        const backgroundImage = new Image();
+        backgroundImage.src = "https://i.pinimg.com/736x/b2/b0/84/b2b084ad6061dfe2122302266ea8af58--flappy-bird-bird-wallpaper.jpg"; // Imagen de fondo
+		
+        
+        function drawBird() {
+            ctx.drawImage(birdImage, bird.x, bird.y, bird.width, bird.height);
+        }
+
+        function createPipe() {
+            let height = Math.floor(Math.random() * 200) + 100;
+            pipes.push({ x: canvas.width, y: 0, width: 40, height: height }); // Tubo superior
+            pipes.push({ x: canvas.width, y: height + 100, width: 40, height: canvas.height - height - 100 }); // Tubo inferior
+        }
+
+        function drawPipes() {
+            ctx.fillStyle = "green";
+            pipes.forEach(pipe => {
+                ctx.fillRect(pipe.x, pipe.y, pipe.width, pipe.height);
+            });
+        }
+
+        function updateGame() {
+            if (!gameRunning) return;
+
+            bird.velocity += gravity;
+            bird.y += bird.velocity;
+
+            pipes.forEach(pipe => { pipe.x -= pipeSpeed; });
+
+            if (pipes.length > 0 && pipes[0].x + pipes[0].width < 0) {
+                pipes.shift();
+                pipes.shift();
+                score++; // Incrementar puntos cuando se superan tubos
+                scoreDisplay.innerText = "Puntos: " + score;
+            }
+
+            if (pipes.length === 0 || pipes[pipes.length - 1].x < canvas.width - 150) {
+                createPipe();
+            }
+
+            // Verificar colisiones
+            if (bird.y + bird.height >= canvas.height || bird.y <= 0 || pipes.some(pipe => 
+                bird.x < pipe.x + pipe.width && bird.x + bird.width > pipe.x && bird.y < pipe.y + pipe.height && bird.y + bird.height > pipe.y)) {
+                gameRunning = false;
+                alert("¡Game Over! Puntos: " + score);
+                location.reload(); // Recargar página para reiniciar
+            }
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Mover el fondo
+            backgroundX -= 1;
+            if (backgroundX <= -canvas.width) backgroundX = 0;
+
+            // Dibujar el fondo en movimiento
+            ctx.drawImage(backgroundImage, backgroundX, 0, canvas.width, canvas.height);
+            ctx.drawImage(backgroundImage, backgroundX + canvas.width, 0, canvas.width, canvas.height);
+
+            drawPipes();
+            drawBird();
+            requestAnimationFrame(updateGame);
+        }
+
+        function jump() {
+            if (gameRunning) {
+                bird.velocity = lift;
+            }
+        }
+
+        startButton.addEventListener("click", function() {
+            startScreen.style.display = "none"; // Ocultar pantalla de inicio
+            gameRunning = true; // Iniciar el juego
+            updateGame(); // Comenzar actualización del juego
+        });
+
+        window.addEventListener("keydown", function(event) {
+            if (event.code === "Space") { // Tecla espacio para saltar
+                jump();
+            }
+        });
+
+        window.addEventListener("touchstart", function() {
+            if (gameRunning) {
+                jump();
+            }
+        });
+    </script>
+</body>
+</html>
