@@ -1,1 +1,51 @@
-<iframe frameborder="0" scrolling="no" src="https://funhtml5games.com?embed=coloringminecraft" style="border: none; height: 100%; width: 100%;"></iframe>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página con Iframe y Botón</title>
+<meta charset="UTF-8">  <!--  <-- IMPORTANTE: Añadido para la codificación -->
+<style>
+/* Estilos CSS */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+.creeper-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #34C749; /* Verde Creeper */
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; /* Bordes redondeados */
+  z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Quita el borde del iframe */
+}
+</style>
+</head>
+<body>
+
+<iframe src="https://funhtml5games.com?embed=sonic"></iframe>
+
+<button class="creeper-button" onclick="abrirEnNuevaPestana()">Abrir en Nueva Pestaña</button>  <!-- Cambiado el texto del botón -->
+
+<script>
+function abrirEnNuevaPestana() {
+  window.open("https://funhtml5games.com?embed=sonic", "_blank");
+}
+</script>
+
+</body>
+</html>
