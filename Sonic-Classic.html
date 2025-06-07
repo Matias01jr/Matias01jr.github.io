@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirigiendo a Sonic</title>
-    <link rel="icon" href="Sonic.png" type="image/png">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            font-family: sans-serif;
-        }
-        .message {
-            text-align: center;
-        }
-    </style>
+<title>Página con Iframe y Botón</title>
+<meta charset="UTF-8">  <!--  <-- IMPORTANTE: Añadido para la codificación -->
+<style>
+/* Estilos CSS */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+.creeper-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #34C749; /* Verde Creeper */
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; /* Bordes redondeados */
+  z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Quita el borde del iframe */
+}
+</style>
 </head>
 <body>
-    <div class="message">
-        <p>Redirigiendo a Sonic...</p>
-        <p>Si no funciona, <a href="https://funhtml5games.com?embed=sonic">haz clic aquí</a>.</p>
-    </div>
-    <script>
-        window.location.href = "https://funhtml5games.com?embed=sonic";
-    </script>
+
+<iframe src="https://funhtml5games.com?embed=sonic"></iframe>
+
+<button class="creeper-button" onclick="abrirEnNuevaPestana()">Abrir en Nueva Pestaña</button>  <!-- Cambiado el texto del botón -->
+
+<script>
+function abrirEnNuevaPestana() {
+  window.open("https://funhtml5games.com?embed=sonic", "_blank");
+}
+</script>
+
 </body>
 </html>
