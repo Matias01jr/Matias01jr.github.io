@@ -4,118 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matias01jr Games</title>
-    <link rel="icon" href="matias01jr.ico" type="image/x-icon">
     <style>
         body {
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: var(--bg-color, #f0f0f0);
-        color: var(--text-color, #333);
-        text-align: center;
-        padding: 50px;
-        transition: background-color 0.3s, color 0.3s;
-      }
-    
-      h1 {
-        color: #007bff;
-        margin-bottom: 20px;
-      }
-    
-      p {
-        font-size: 1.2em;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-      button {
-        margin: 10px;
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #28a745; /* Color verde */
-        color: green;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-    
-      a:hover {
-        background-color: #28a745; /* Hover con un verde más oscuro */
-      }
-    
-      a {
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        cursor: pointer;
-        color: #007bff;
-        border: none;
-        border-radius: 5px;
-        transition: background-color 0.3s, color 0.3s;
-      }
-    
-      .theme-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-      }
-    
-      .dark-theme {
-        --bg-color: #333;
-        --text-color: #f0f0f0;
-      }
-    
-      .dark-theme button {
-        background-color: #28a745;
-        color: #f0f0f0;
-      }
-    
-      .light-theme button {
-        background-color: #28a745;
-        color: #f0f0f0;
-      }
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #555;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .game-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .screenshots img {
+            width: 200px; /* Ajusta el tamaño según tus necesidades */
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
-    <button class="theme-button" onclick="toggleTheme()">Cambiar Tema</button>
-    <h1>¡Bienvenido a Matias01jr Games! ¡Elige un juego!</h1>
 
-    <button onclick="location.href='Minecraft-3DCraft.html'">Minecraft 3D</button>
-    <button onclick="location.href='Paper-Minecraft.html'">Paper Minecraft</button>
-    <button onclick="location.href='Paper-Minecraft-Mobile.html'">Paper Minecraft Mobile</button>
-    <button onclick="location.href='Geometry-Dash.html'">Geometry Dash</button>
-    <button onclick="location.href='Geometry-Minecraft.html'">Geometry Minecraft</button>
-    <button onclick="location.href='Geometry-Minecraft-2.html'">Geometry Minecraft 2</button>
-    <button onclick="location.href='https://creadorcraftcp.blogspot.com/'">CreadorCraft (ally)</button>
-    <button onclick="location.href='MineWorld-Discord-Chat.html'">MineWorld Discord Chat</button>
-    <button onclick="location.href='index-2.html'">-------Siguiente página-------</button>
+    <h1>Matias01jr Games</h1>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const theme = localStorage.getItem('theme') || 'light';
-            document.body.classList.add(theme + '-theme');
-        });
+    <div class="game-info">
+        <p>¡Bienvenido a Matias01jr Games! Descubre una colección de juegos divertidos y emocionantes. ¡A jugar!</p>
+        <p>¡Desarrollado por Matias01jr! Disfruta de la diversión y los desafíos.</p>
+    </div>
 
-        function toggleTheme() {
-            let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.body.classList.remove(currentTheme + '-theme');
-            document.body.classList.add(newTheme + '-theme');
-            localStorage.setItem('theme', newTheme);
-        }
-    </script>
+    <h2>Características Principales</h2>
+    <ul>
+        <li>¡Únete a la comunidad de Matias01jr Games! Explora juegos increíbles, comparte tus experiencias y conecta con otros jugadores. ¡La diversión te espera!</li>
 
-    <script async="" defer="" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3">
-        new Crate({
-            server: '1186628985795391558', // Comunidad de Matias01jr
-            channel: '1186649063219789965' // #reglas
-        })
-    </script>
+    </ul>
+
+    <h2>Capturas de Pantalla</h2>
+    <div class="screenshots">
+        <img src="Screenshots/Screenshot_1.png" alt="Captura de pantalla 1>
+		<img src="Screenshots/Screenshot_2.png" alt="Captura de pantalla 2">
+		<img src="Screenshots/Screenshot_3.png" alt="Captura de pantalla 3">
+		<img src="Screenshots/Screenshot_4.png" alt="Captura de pantalla 4">
+        
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+
+    <h2>¡Visita la página!</h2>
+    <p>
+        ¡Visita la página de inicio!: <a href="index-1.html">Visitar</a><br>
+    </p>
+
+    <h2>Tecnologías Utilizadas</h2>
+    <ul>
+        <li>Html5 (la mayoría de juegos)</li>
+        <li>Flash (Ruffle, solo algunos juegos, tampoco necesitas tenerlo en el navegador, la página lo gestiona automáticamente)</li>
+        <li>TurboWarp (para la mayoria de los juegos provenientes de Scratch)</li>
+		<li>ChatGPT, CreaProBot, etc. (Para hacer la página)</li>
+    </ul>
+
+    <h2>Contacto</h2>
+    <p>
+        ¿Tienes alguna pregunta? Contacta a Matias01jr en: <a href="https://matias01jr.github.io/MineWorld-Discord-Chat.html">Discord</a>
+    </p>
+
+    <p>¡Gracias por jugar! Esperamos que te diviertas jugando!.</p>
+	
+	<h2>Acerca de la página</h2>
+	<p>
+	    Esta página solo lo hago por Hobby, sin ningún fin de lucro, pero si quieres colaborar a mejorarla puedes contactarme,
+		hasta descargar fragmentos de código de la página desde Github y darme ejemplos de como podría verse, a través de <a href="https://matias01jr.github.io/MineWorld-Discord-Chat.html">Discord</a>
+    </p>
 </body>
 </html>
