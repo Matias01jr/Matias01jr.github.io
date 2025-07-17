@@ -27,6 +27,33 @@
     </style>
 </head>
 <body>
+    <button class="creeper-button" onclick="location.href='old-browser.html'">¿Navegador antiguo?</button> 
+    <style>
+/* Estilos CSS */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+.creeper-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #34C749; /* Verde Creeper */
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; /* Bordes redondeados */
+  z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+}
+
+</style>
     <div id="flash-container"></div>
     <script>
         // Inicializa Ruffle
