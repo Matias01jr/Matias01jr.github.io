@@ -21,21 +21,19 @@
       position: fixed;
       bottom: 20px;
       left: 20px;
-      background-color: #28a745; /* verde */
+      background-color: #34C749; /* Verde Creeper */
       color: white;
       border: none;
-      border-radius: 10px; /* esquinas redondeadas */
-      width: 70px;
-      height: 40px;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
       font-size: 16px;
       cursor: pointer;
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-      transition: background-color 0.3s;
+      border-radius: 10px; /* Bordes redondeados */
+      z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
     }
 
-    .btn-volver:hover {
-      background-color: #34C749;
-    }
   </style>
 </head>
 <body>
@@ -44,6 +42,6 @@
     "></iframe>
 
   <!-- Botón flotante de volver atrás -->
-  <button class="btn-volver" onclick="history.back()">◀️Atrás</button>
+  <button class="btn-volver" onclick="history.back()">◀️Regresar</button>
 </body>
 </html>
