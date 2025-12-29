@@ -1,0 +1,63 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - '**.js'
+      - '**.css'
+  workflow_dispatch:
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+      
+      - name: Install npm dependencies
+        run: npm install
+        continue-on-error: true
+      
+      - name: Initialize Capacitor
+        run: |
+          if [ ! -f capacitor.config.json ]; then
+            npm install @capacitor/core @capacitor/cli @capacitor/android
+            npx cap init "Matias01jr Games" "com.matias01jr.games" --web-dir=.
+          fi
+        continue-on-error: true
+      
+      - name: Sync Android
+        run: npx cap sync android
+        continue-on-error: true
+      
+      - name: Build Debug APK
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
+        continue-on-error: true
+      
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: APK-Debug
+          path: android/app/build/outputs/apk/debug/*.apk
+        continue-on-error: true
