@@ -60,4 +60,4 @@ jobs:
         with:
           name: APK-Debug
           path: android/app/build/outputs/apk/debug/*.apk
-        continue-on-error: true
+        continue-on-error: false
