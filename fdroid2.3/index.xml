@@ -1,0 +1,606 @@
+<?xml version="1.0" ?>
+<fdroid>
+  <repo name="ReviveDroid 2.3 for F-droid" url="https://matias01jr.github.io/fdroid2.3" timestamp="1771276223" version="1">
+    <description>Repositorio personalizado para Android 2.3+ con 40 aplicaciones</description>
+  </repo>
+  <application id="minecraft...pocket.edition_signed">
+    <name>Minecraft - Pocket Edition_signed</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Minecraft - Pocket Edition_signed.apk
+Tamaño: 10.30 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>1</versioncode>
+      <apkname>Minecraft - Pocket Edition_signed.apk</apkname>
+      <hash type="sha256">6901f18f3b27b85fec37d239a4117fcd7f47e30e6a3217ff8f3dad7756d24325</hash>
+      <size>10795987</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="flappy.bird.1.3">
+    <name>flappy-bird-1-3</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: flappy-bird-1-3.apk
+Tamaño: 0.87 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>2</versioncode>
+      <apkname>flappy-bird-1-3.apk</apkname>
+      <hash type="sha256">a3e6958ce2100966f4e207778e4cdbe72788214148c7f4bfd042ba365498deb3</hash>
+      <size>915558</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.cpuid.cpu_z_1.23.23_minapi8(armeabi,mips,x86)(nodpi)_apkmirror.com">
+    <name>com.cpuid.cpu_z_1.23-23_minAPI8(armeabi,mips,x86)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.cpuid.cpu_z_1.23-23_minAPI8(armeabi,mips,x86)(nodpi)_apkmirror.com.apk
+Tamaño: 2.36 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>3</versioncode>
+      <apkname>com.cpuid.cpu_z_1.23-23_minAPI8(armeabi,mips,x86)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">c0e4c3122df1e8c0268886b2a69e7863a16248eec54e7f20d5c73545af3cfc30</hash>
+      <size>2471329</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.opera.browser_15.0.1162.60140.1400060140_minapi9(armeabi,armeabi.v7a)(nodpi)_apkmirror.com">
+    <name>com.opera.browser_15.0.1162.60140-1400060140_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.opera.browser_15.0.1162.60140-1400060140_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk
+Tamaño: 34.68 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>4</versioncode>
+      <apkname>com.opera.browser_15.0.1162.60140-1400060140_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">de271d39c662796a7da1eda8675589d58a0b731461aaa618f71edf850dc1609f</hash>
+      <size>36363477</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="video.downloader.for.uc.browser.2.1.0.0.beta.multi.android">
+    <name>video-downloader-for-uc-browser-2-1-0-0-beta-multi-android</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: video-downloader-for-uc-browser-2-1-0-0-beta-multi-android.apk
+Tamaño: 0.07 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>5</versioncode>
+      <apkname>video-downloader-for-uc-browser-2-1-0-0-beta-multi-android.apk</apkname>
+      <hash type="sha256">6936f3ac763c89399f1813c96f0e98092d8b9f5ca803618a0c794635f1d6722f</hash>
+      <size>76422</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.google.android.apps.docs_1.3.222.6.1322206_minapi9(armeabi)(nodpi)_apkmirror.com">
+    <name>com.google.android.apps.docs_1.3.222.6-1322206_minAPI9(armeabi)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.google.android.apps.docs_1.3.222.6-1322206_minAPI9(armeabi)(nodpi)_apkmirror.com.apk
+Tamaño: 6.64 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>6</versioncode>
+      <apkname>com.google.android.apps.docs_1.3.222.6-1322206_minAPI9(armeabi)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">ce06ffd7113340693c5477b4bd3b1860a05a04b7c1cd6f3c2a9dee843847ce41</hash>
+      <size>6965378</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="subway_surfers_v1.6.0.armv6">
+    <name>Subway_Surfers_v1.6.0-ARMV6</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Subway_Surfers_v1.6.0-ARMV6.apk
+Tamaño: 19.53 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>7</versioncode>
+      <apkname>Subway_Surfers_v1.6.0-ARMV6.apk</apkname>
+      <hash type="sha256">7751cd3bc96f9f8f3e82ccb4273056b1974fbc781c0c3e8dee1fba92dce3f433</hash>
+      <size>20477568</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.iappmediasoft.kickthecreeper">
+    <name>com-iappmediasoft-kickthecreeper</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com-iappmediasoft-kickthecreeper.apk
+Tamaño: 13.72 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>8</versioncode>
+      <apkname>com-iappmediasoft-kickthecreeper.apk</apkname>
+      <hash type="sha256">1df52a76aa9908f4ab85d07ae26113eed17e2fbd1fea8c88824072806b9e1f34</hash>
+      <size>14382874</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="mobile_sftp.1.15">
+    <name>Mobile_SFTP-1.15</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Mobile_SFTP-1.15.apk
+Tamaño: 3.09 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>9</versioncode>
+      <apkname>Mobile_SFTP-1.15.apk</apkname>
+      <hash type="sha256">1bb7e0c3d961032847837fb83bb55812b0b635cf220a88a7ae8bad8de59c31a4</hash>
+      <size>3240057</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.oceanred.kickthecreeper">
+    <name>com-oceanred-kickthecreeper</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com-oceanred-kickthecreeper.apk
+Tamaño: 14.23 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>10</versioncode>
+      <apkname>com-oceanred-kickthecreeper.apk</apkname>
+      <hash type="sha256">14416eae465179e2b33a9153a0fd0cb0cfad3c668029a5faa055a4808bcc1692</hash>
+      <size>14921714</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="fernanfloo.2.2">
+    <name>fernanfloo-2-2</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: fernanfloo-2-2.apk
+Tamaño: 27.34 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>11</versioncode>
+      <apkname>fernanfloo-2-2.apk</apkname>
+      <hash type="sha256">affde2483072fc4f35942397c0fefed70829133fd3e09bfe20dae8965c092b63</hash>
+      <size>28667335</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.adobe.reader_11.5.0.1.98311_minapi10(armeabi,armeabi.v7a)(nodpi)_apkmirror.com">
+    <name>com.adobe.reader_11.5.0.1-98311_minAPI10(armeabi,armeabi-v7a)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.adobe.reader_11.5.0.1-98311_minAPI10(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk
+Tamaño: 8.09 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>12</versioncode>
+      <apkname>com.adobe.reader_11.5.0.1-98311_minAPI10(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">8c7edd1ab5fe31cc86420469fd57ec57daf31823289b79ea09dfa6ba1ab9071d</hash>
+      <size>8486209</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.ninjakiwi.bloonstd5.2.4.paid.www.apkshub.com">
+    <name>com.ninjakiwi.bloonstd5-2.4-paid-www.apkshub.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.ninjakiwi.bloonstd5-2.4-paid-www.apkshub.com.apk
+Tamaño: 37.22 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>13</versioncode>
+      <apkname>com.ninjakiwi.bloonstd5-2.4-paid-www.apkshub.com.apk</apkname>
+      <hash type="sha256">ccbebb8ad104794288a605ccac69c6a06c93500d333172c23ed939c0d5cf1fd7</hash>
+      <size>39031458</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="vascolet.4_.tierra.de.gigantes">
+    <name>Vascolet 4_ Tierra de Gigantes</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Vascolet 4_ Tierra de Gigantes.apk
+Tamaño: 45.11 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>14</versioncode>
+      <apkname>Vascolet 4_ Tierra de Gigantes.apk</apkname>
+      <hash type="sha256">0317e354badc33a1addb35e12710cc62ae3b333263a03b8dce5a50e8ee95cd84</hash>
+      <size>47300344</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="geometry.dash.2.001.by.deam147(2)">
+    <name>Geometry Dash 2.001 by Deam147(2)</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Geometry Dash 2.001 by Deam147(2).apk
+Tamaño: 47.57 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>15</versioncode>
+      <apkname>Geometry Dash 2.001 by Deam147(2).apk</apkname>
+      <hash type="sha256">ce6580e7c576f04fc583f5570d65d4164c6615f7395cf15f6cb11924146c184f</hash>
+      <size>49884021</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.sega.sonicdash_2.8.0.go.1510191211_minapi10(armeabi.v7a,x86)(nodpi)_apkmirror.com">
+    <name>com.sega.sonicdash_2.8.0.Go-1510191211_minAPI10(armeabi-v7a,x86)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.sega.sonicdash_2.8.0.Go-1510191211_minAPI10(armeabi-v7a,x86)(nodpi)_apkmirror.com.apk
+Tamaño: 61.10 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>16</versioncode>
+      <apkname>com.sega.sonicdash_2.8.0.Go-1510191211_minAPI10(armeabi-v7a,x86)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">5beac76fde10d828cb15b568a4756bf9339c5b9615b3f904fb7985433859d9c0</hash>
+      <size>64065807</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.sega.sonicdash_13.11.25.12.07.21.15_minapi10(armeabi.v7a)(nodpi)_apkmirror.com">
+    <name>com.sega.sonicdash_13.11.25.12.07.21-15_minAPI10(armeabi-v7a)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.sega.sonicdash_13.11.25.12.07.21-15_minAPI10(armeabi-v7a)(nodpi)_apkmirror.com.apk
+Tamaño: 42.28 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>17</versioncode>
+      <apkname>com.sega.sonicdash_13.11.25.12.07.21-15_minAPI10(armeabi-v7a)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">0a8938c43d934af187aa3e8e162c7d37a46d315306c5d62dd6882139512be0b0</hash>
+      <size>44332523</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.opera.browser.classic.12.1.9.1502251211.minapi4">
+    <name>com.opera.browser.classic-12.1.9-1502251211-minAPI4</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.opera.browser.classic-12.1.9-1502251211-minAPI4.apk
+Tamaño: 15.42 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>18</versioncode>
+      <apkname>com.opera.browser.classic-12.1.9-1502251211-minAPI4.apk</apkname>
+      <hash type="sha256">9110a1b3618956083e89f81f4fbc2fc48d5d985c93c7cbde5cc6e5efd2210b26</hash>
+      <size>16165015</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.ucmobile.intl_10.10.0.796.238_minapi9(armeabi,armeabi.v7a)(nodpi)_apkmirror.com">
+    <name>com.UCMobile.intl_10.10.0.796-238_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.UCMobile.intl_10.10.0.796-238_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk
+Tamaño: 16.39 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>19</versioncode>
+      <apkname>com.UCMobile.intl_10.10.0.796-238_minAPI9(armeabi,armeabi-v7a)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">7911db3fc20005868356771c7a96e54c9fcfb7984337969c170949d350084d45</hash>
+      <size>17190163</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="traductor.por.uc.browser_1.1.1.0_apkcombo.com">
+    <name>Traductor por UC Browser_1.1.1.0_apkcombo.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Traductor por UC Browser_1.1.1.0_apkcombo.com.apk
+Tamaño: 0.47 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>20</versioncode>
+      <apkname>Traductor por UC Browser_1.1.1.0_apkcombo.com.apk</apkname>
+      <hash type="sha256">743afb24b537a72c542d50c6bdd1d7b38978bc5cfad4581ef4484a70d22e69b6</hash>
+      <size>497488</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="ninesky_browser.6.1">
+    <name>Ninesky_Browser-6.1</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Ninesky_Browser-6.1.apk
+Tamaño: 2.79 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>21</versioncode>
+      <apkname>Ninesky_Browser-6.1.apk</apkname>
+      <hash type="sha256">57f40f7355e3106d67fa34b2bb00e041b42ad20baf01d9846a8969919da558c5</hash>
+      <size>2926767</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="classicube">
+    <name>ClassiCube</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: ClassiCube.apk
+Tamaño: 2.80 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>22</versioncode>
+      <apkname>ClassiCube.apk</apkname>
+      <hash type="sha256">8fe20e74564ce92517f32439ae3c9464a0536b19145e5eb30331b25b9cd17227</hash>
+      <size>2937909</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="droidcord">
+    <name>Droidcord</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Droidcord.apk
+Tamaño: 0.13 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>23</versioncode>
+      <apkname>Droidcord.apk</apkname>
+      <hash type="sha256">73e9e19c7fc2b9e5a4546b0973ac0b823d78e94f7d5ba0b4b4522c5aab1e5964</hash>
+      <size>140619</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="god_quard_3d">
+    <name>God_Quard_3D</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: God_Quard_3D.apk
+Tamaño: 34.66 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>24</versioncode>
+      <apkname>God_Quard_3D.apk</apkname>
+      <hash type="sha256">f56feb8fd2bac7dac753a3f57a3b326798a87567f2d4030e1b663aff859ba0ac</hash>
+      <size>36345471</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="op.internet.3.old">
+    <name>Op internet 3 old</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Op internet 3 old.apk
+Tamaño: 15.42 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>25</versioncode>
+      <apkname>Op internet 3 old.apk</apkname>
+      <hash type="sha256">d78bda3d9e057db9d5b49b55e7faacc7602a141f3965bfb6aff7e7a57e55f7ad</hash>
+      <size>16164453</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.ea.game.pvzfree_row_1.1.44.52_minapi9(armeabi)(nodpi)">
+    <name>com.ea.game.pvzfree_row_1.1.44-52_minAPI9(armeabi)(nodpi)</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.ea.game.pvzfree_row_1.1.44-52_minAPI9(armeabi)(nodpi).apk
+Tamaño: 9.13 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>26</versioncode>
+      <apkname>com.ea.game.pvzfree_row_1.1.44-52_minAPI9(armeabi)(nodpi).apk</apkname>
+      <hash type="sha256">f3c7fc9754f1abce2b97c2f8f326bec7147c43e2b9c6879cde24a61eb54b6fad</hash>
+      <size>9568521</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="craft.earth.robo.box_v634_apkpure.com">
+    <name>Craft Earth Robo Box_v634_apkpure.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Craft Earth Robo Box_v634_apkpure.com.apk
+Tamaño: 31.11 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>27</versioncode>
+      <apkname>Craft Earth Robo Box_v634_apkpure.com.apk</apkname>
+      <hash type="sha256">25abfe3678bc0d15c968a319f0ed82c22ae625293eb255d11939b0446eba6672</hash>
+      <size>32621036</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="my.oldboy!.lite_1.5.1_apkpure">
+    <name>My OldBoy! Lite_1.5.1_Apkpure</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: My OldBoy! Lite_1.5.1_Apkpure.apk
+Tamaño: 1.29 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>28</versioncode>
+      <apkname>My OldBoy! Lite_1.5.1_Apkpure.apk</apkname>
+      <hash type="sha256">c17ff7bb4133e935320e3783d1f8fe43039ae05a51b077ac87bde049e143187f</hash>
+      <size>1355143</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.google.android.apps.maps_6.14.5.614050202_minapi8(240dpi)_apkmirror.com">
+    <name>com.google.android.apps.maps_6.14.5-614050202_minAPI8(240dpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.google.android.apps.maps_6.14.5-614050202_minAPI8(240dpi)_apkmirror.com.apk
+Tamaño: 7.16 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>29</versioncode>
+      <apkname>com.google.android.apps.maps_6.14.5-614050202_minAPI8(240dpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">48c5542d4657a990a76e81454846bdfc61b8f49e75553df4d33b21ec14934239</hash>
+      <size>7502812</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.vapps.nesemu2">
+    <name>com.vapps.NesEmu2</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.vapps.NesEmu2.apk
+Tamaño: 0.92 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>30</versioncode>
+      <apkname>com.vapps.NesEmu2.apk</apkname>
+      <hash type="sha256">d4f895853a7cc1318331b55904c244c71eac1004b3e981ade9532101d150e8b0</hash>
+      <size>968228</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="mcpe_0.14.3_akeky_2.3_">
+    <name>MCPE_0.14.3_AkeKy_2.3_</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: MCPE_0.14.3_AkeKy_2.3_.apk
+Tamaño: 20.80 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>31</versioncode>
+      <apkname>MCPE_0.14.3_AkeKy_2.3_.apk</apkname>
+      <hash type="sha256">ce020e07bbbcb1fe96273703f1436b00023ed644ce476bb243f0dd556394f09c</hash>
+      <size>21806514</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.opera.mini.native_20.0.2254.110284.201110284_minapi9(armeabi)(nodpi)_apkmirror.com">
+    <name>com.opera.mini.native_20.0.2254.110284-201110284_minAPI9(armeabi)(nodpi)_apkmirror.com</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.opera.mini.native_20.0.2254.110284-201110284_minAPI9(armeabi)(nodpi)_apkmirror.com.apk
+Tamaño: 3.87 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>32</versioncode>
+      <apkname>com.opera.mini.native_20.0.2254.110284-201110284_minAPI9(armeabi)(nodpi)_apkmirror.com.apk</apkname>
+      <hash type="sha256">f9636b09b69277770b1180685bcc168151138c6d30c93dfa457da8484c85a562</hash>
+      <size>4053425</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="freeways.1.1.pdalife.ru">
+    <name>Freeways-1.1-pdalife.ru</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Freeways-1.1-pdalife.ru.apk
+Tamaño: 18.05 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>33</versioncode>
+      <apkname>Freeways-1.1-pdalife.ru.apk</apkname>
+      <hash type="sha256">ecb237e042dedfebba740bf75ccdb7af877aeaa8c472d9b3c64b172c91491206</hash>
+      <size>18930021</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="ftpdroid.2.1.2">
+    <name>ftpdroid-2-1-2</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: ftpdroid-2-1-2.apk
+Tamaño: 13.53 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>34</versioncode>
+      <apkname>ftpdroid-2-1-2.apk</apkname>
+      <hash type="sha256">c91abd0931f7cedac089a5f0eec26efd688ef8d93bba61058f2d3db0a6263099</hash>
+      <size>14189854</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="com.google.android.apps.adm.1.4.4.1404.minapi9">
+    <name>com.google.android.apps.adm-1.4.4-1404-minAPI9</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: com.google.android.apps.adm-1.4.4-1404-minAPI9.apk
+Tamaño: 1.95 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>35</versioncode>
+      <apkname>com.google.android.apps.adm-1.4.4-1404-minAPI9.apk</apkname>
+      <hash type="sha256">14e5b59e85b1e4cefac0f62a05d3cb5612d49f02fb1b8467fa84f95044c79c5a</hash>
+      <size>2044076</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="my.boy!.lite_1.7.3_apkpure">
+    <name>My Boy! Lite_1.7.3_Apkpure</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: My Boy! Lite_1.7.3_Apkpure.apk
+Tamaño: 2.48 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>36</versioncode>
+      <apkname>My Boy! Lite_1.7.3_Apkpure.apk</apkname>
+      <hash type="sha256">d2fe935ddedceb0816536fe49736d9d668478650967afb407b62910886bd9508</hash>
+      <size>2595796</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="simple_browser">
+    <name>Simple_Browser</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Simple_Browser.apk
+Tamaño: 3.36 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>37</versioncode>
+      <apkname>Simple_Browser.apk</apkname>
+      <hash type="sha256">38dacfc2663317efa3c4db861415e99ad72f1dcabd555bc839b7696611475fcf</hash>
+      <size>3525485</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="exploration.1.3.3">
+    <name>Exploration 1.3.3</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: Exploration 1.3.3.apk
+Tamaño: 2.29 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>38</versioncode>
+      <apkname>Exploration 1.3.3.apk</apkname>
+      <hash type="sha256">f0bd90604cc8af80025cebd8ac14af6eddecec4f6d7bcaabd41c46c9ccef1381</hash>
+      <size>2400715</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="j2me_loader.1.4.2.android.2.3">
+    <name>J2ME_Loader-1.4.2-Android-2.3</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: J2ME_Loader-1.4.2-Android-2.3.apk
+Tamaño: 2.19 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>39</versioncode>
+      <apkname>J2ME_Loader-1.4.2-Android-2.3.apk</apkname>
+      <hash type="sha256">430f6f922165faa5aed56b76299abf1421b41ba040563695d023cbf2b0439146</hash>
+      <size>2297511</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+  <application id="nostalgiacraft.0.8.0_v0.8.0(300800010)_mod">
+    <name>NostalgiaCraft 0.8.0_v0.8.0(300800010)_mod</name>
+    <summary>Aplicación compatible con Android 2.3+</summary>
+    <desc>APK: NostalgiaCraft 0.8.0_v0.8.0(300800010)_mod.apk
+Tamaño: 10.30 MB</desc>
+    <package>
+      <version>1.0</version>
+      <versioncode>40</versioncode>
+      <apkname>NostalgiaCraft 0.8.0_v0.8.0(300800010)_mod.apk</apkname>
+      <hash type="sha256">a6b5b154be9101386ea86d419475e6690acc8a3308ed182754b83a6a542b27f4</hash>
+      <size>10800603</size>
+      <sdkver>9</sdkver>
+      <added>2026-02-16</added>
+    </package>
+  </application>
+</fdroid>
