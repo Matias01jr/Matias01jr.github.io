@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>DroidStore Archive 2.3</title>
+  <style type="text/css">
+    * { margin: 0; padding: 0; }
+    body {
+      font-family: "Droid Sans", "DejaVu Sans", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      padding: 0 0 30px 0;
+    }
+    #cabecera {
+      background: #16213e;
+      border-bottom: 2px solid #0f3460;
+      padding: 14px 16px 12px 16px;
+    }
+    #cabecera h1 { font-size: 17px; font-weight: bold; color: #e94560; letter-spacing: 1px; }
+    #cabecera p  { font-size: 11px; color: #7a8a9a; margin-top: 3px; }
+    #barra {
+      background: #0f3460;
+      padding: 7px 16px;
+      font-size: 11px;
+      color: #a0c0e0;
+      border-bottom: 1px solid #1a4a80;
+    }
+    #controles { padding: 10px 14px; border-bottom: 1px solid #0f3460; }
+    #filtro {
+      font-family: inherit;
+      font-size: 12px;
+      background: #0d1b2a;
+      color: #d0e8ff;
+      border: 1px solid #1a4070;
+      padding: 6px 10px;
+      width: 150px;
+    }
+    #lista { list-style: none; padding: 0 12px; margin-top: 6px; }
+    #lista li { border-bottom: 1px solid #0f2040; }
+    #lista li a {
+      display: block;
+      padding: 9px 6px;
+      color: #88ccff;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    #lista li a:active { background: #0f3460; color: #ffffff; }
+    .icono { display: inline; font-weight: bold; margin-right: 6px; font-size: 11px; }
+    .icono-dir { color: #f0c040; }
+    .icono-img { color: #50e0a0; }
+    .icono-vid { color: #e060c0; }
+    .icono-aud { color: #60c0e0; }
+    .icono-zip { color: #e09030; }
+    .icono-htm { color: #e94560; }
+    .icono-txt { color: #a0c0a0; }
+    .icono-gen { color: #8090a0; }
+    #mensaje {
+      padding: 20px 16px;
+      font-size: 12px;
+      color: #7a8a9a;
+      line-height: 1.8;
+    }
+    #mensaje b { color: #e0a040; }
+    #pie { padding: 10px 16px; font-size: 10px; color: #3a4a5a; border-top: 1px solid #0f2040; margin-top: 14px; }
+  </style>
+</head>
+<body>
+
+<div id="cabecera">
+  <h1>&#128451; DroidStore Archive 2.3</h1>
+  <p id="subtitulo"></p>
+</div>
+<div id="barra"><span id="estado"></span></div>
+<div id="controles">
+  <input type="text" id="filtro" placeholder="Filtrar archivos..." onkeyup="filtrar()" />
+</div>
+<ul id="lista"></ul>
+<div id="mensaje"></div>
+<div id="pie">DroidStore Archive 2.3 &bull; Android 2.3+ compatible</div>
+
+<script type="text/javascript">
+
+/* ============================================================
+   LISTA DE ARCHIVOS
+   Hay dos formas de agregar un archivo:
+
+   1) Archivo en la misma carpeta (ruta local):
+      "nombre.extension",
+
+   2) Archivo en otro servidor (URL externa):
+      ["Nombre visible", "https://url-completa.com/archivo.zip"],
+
+   Puedes mezclar los dos formatos libremente.
+   El ultimo elemento puede no tener coma al final.
+   ============================================================ */
+
+var ARCHIVOS = [
+  "ClassiCube.apk",
+  ["https://drive.usercontent.google.com/download?id=1aQsQlgydYORfQHwta1PeCEhwA55SJS_t&export=download&authuser=0"],
+  "Droidcord(Discord).apk",
+  "Exploration 1.3.3.apk",
+  "flappy-bird-1-3.apk",
+  "Freeways-1.1.apk",
+  ["https://drive.usercontent.google.com/download?id=1TsrbYN_5GmUIaljWG3e0UmvwIFJypYcu&export=download&authuser=0"],
+  "Minecraft-0.14.3.apk",
+  "Mobile_SFTP-1.15.apk",
+  "My-Boy!-Lite(GBA).apk",
+  "My-OldBoy!-Lite(GB,GBC).apk",
+  "NesEmu(Emulador-Nes).apk",
+  "Ninesky_Browser.apk",
+  "NinjaKiwi.apk",
+  "NotPipe(Youtube).apk",
+  "Op internet 3 old.apk",
+  "Plantas-VS Zombies(2014).apk",
+  "Simple_Browser.apk",
+  ["https://drive.usercontent.google.com/download?id=1do29XJFk6pvwVLfCE0QYcjeLVF3DAAFx&export=download&authuser=0"-],
+  ["https://drive.usercontent.google.com/download?id=1fxoTBGQv9M96QYXkqp3kphBYJ7mTQeHo&export=download&authuser=0"],
+  "Subway_Surfers_ARMV6.apk",
+  "Traductor-UCBrowser.apk",
+  "UCBrowser(2016).apk",
+  "VideoDownloader-UCBrowser.apk",
+  "WPSOffice(2016).apk",
+  "OperaMini(2016).apk",
+  ["https://drive.usercontent.google.com/download?id=1fuGiPIzj_sgv1SQH4RuVugDHtvHkJUdx&export=download&authuser=0"],
+  ["https://drive.usercontent.google.com/download?id=1Z1_GbP2pPQkA2heExV51Ma27PlVjnI_n&export=download&authuser=0"],
+  "Pou(2016).apk",
+  "Minecraft-0.14.3.apk",
+  "MyTalkingTom.apk",
+  "TalkingTom-(2015).apk",
+  ["https://drive.usercontent.google.com/download?id=1Ods-giW8qX5p5fbCefnZs3UKYlz9E4gK&export=download&authuser=0"],
+  "KicktheCreeper(1).apk",
+  "KicktheCreeper(2).apk",
+  ["https://drive.usercontent.google.com/download?id=1xe4w-O8uUlrOzYM2VoMLybCiuS58M-yh&export=download&authuser=0"],
+  ["https://drive.usercontent.google.com/download?id=1W0EMI3l9I948ujLOKrbDwhesoZ6xqQ88&export=download&authuser=0"],
+  
+
+  /* --- Ejemplos con URL externa: ---
+
+  ["SilkyWorld v2 (Google Drive)", "https://drive.google.com/uc?export=download&id=TU_ID_AQUI"],
+  ["Texturas pack (Mediafire)",    "https://www.mediafire.com/file/TU_ENLACE/file"],
+  ["leeme.txt", "https://raw.githubusercontent.com/usuario/repo/main/leeme.txt"]
+
+  */
+];
+
+/* ============================================================
+   FIN DE LA LISTA - no hace falta tocar nada mas abajo
+   ============================================================ */
+
+/* Normaliza cada entrada al formato interno {nombre, url, externo} */
+var todosLosArchivos = [];
+for (var _i = 0; _i < ARCHIVOS.length; _i++) {
+  var _e = ARCHIVOS[_i];
+  if (typeof _e === 'string') {
+    todosLosArchivos.push({nombre: _e,    url: _e,    externo: false});
+  } else {
+    todosLosArchivos.push({nombre: _e[0], url: _e[1], externo: true});
+  }
+}
+
+function tipoArchivo(nombre) {
+  var n = nombre.toLowerCase();
+  if (n.charAt(n.length - 1) === '/') { return 'dir'; }
+  var partes = n.split('.');
+  if (partes.length < 2) { return 'gen'; }
+  var ext = partes[partes.length - 1];
+  if ({jpg:1,jpeg:1,png:1,gif:1,bmp:1,webp:1,svg:1,ico:1}[ext]) { return 'img'; }
+  if ({mp4:1,avi:1,mkv:1,mov:1,wmv:1,webm:1,flv:1,'3gp':1}[ext]) { return 'vid'; }
+  if ({mp3:1,ogg:1,wav:1,flac:1,aac:1,m4a:1,wma:1}[ext]) { return 'aud'; }
+  if ({zip:1,rar:1,tar:1,gz:1,'7z':1,bz2:1}[ext]) { return 'zip'; }
+  if ({html:1,htm:1,xhtml:1,php:1,asp:1}[ext]) { return 'htm'; }
+  if ({txt:1,md:1,csv:1,log:1,xml:1,json:1,js:1,css:1,py:1,c:1,cpp:1,java:1}[ext]) { return 'txt'; }
+  return 'gen';
+}
+
+var ICONOS = {
+  dir: {clase:'icono-dir', texto:'[DIR]'},
+  img: {clase:'icono-img', texto:'[IMG]'},
+  vid: {clase:'icono-vid', texto:'[VID]'},
+  aud: {clase:'icono-aud', texto:'[AUD]'},
+  zip: {clase:'icono-zip', texto:'[ZIP]'},
+  htm: {clase:'icono-htm', texto:'[HTM]'},
+  txt: {clase:'icono-txt', texto:'[TXT]'},
+  gen: {clase:'icono-gen', texto:'[---]'}
+};
+
+function renderizar(lista) {
+  var ul      = document.getElementById('lista');
+  var mensaje = document.getElementById('mensaje');
+  ul.innerHTML      = '';
+  mensaje.innerHTML = '';
+
+  if (lista.length === 0) {
+    mensaje.innerHTML =
+      '<b>No hay archivos para mostrar.</b><br/>' +
+      'Agrega nombres al array ARCHIVOS en la parte de arriba del codigo.';
+    document.getElementById('estado').innerHTML = '0 archivos';
+    return;
+  }
+
+  for (var i = 0; i < lista.length; i++) {
+    var entrada = lista[i];
+    var tipo    = tipoArchivo(entrada.nombre);
+    var ic      = ICONOS[tipo] || ICONOS['gen'];
+
+    var li   = document.createElement('li');
+    var a    = document.createElement('a');
+    var span = document.createElement('span');
+
+    a.href = entrada.url;
+
+    /* Archivos externos: abrir en pestana nueva + forzar descarga donde sea posible */
+    if (entrada.externo) {
+      a.target = '_blank';
+      try { a.setAttribute('download', ''); } catch(e) {}
+    } else {
+      /* Archivos locales no-HTML: forzar descarga donde sea posible */
+      var esHTML = (tipo === 'htm');
+      if (!esHTML) { try { a.setAttribute('download', entrada.nombre); } catch(e) {} }
+    }
+
+    span.className = 'icono ' + ic.clase;
+    span.appendChild(document.createTextNode(ic.texto + ' '));
+    a.appendChild(span);
+    a.appendChild(document.createTextNode(entrada.nombre));
+
+    /* Indicador visual para externos */
+    if (entrada.externo) {
+      var ext_badge = document.createElement('span');
+      ext_badge.style.fontSize   = '10px';
+      ext_badge.style.color      = '#507090';
+      ext_badge.style.marginLeft = '6px';
+      ext_badge.appendChild(document.createTextNode('[externo]'));
+      a.appendChild(ext_badge);
+    }
+
+    li.appendChild(a);
+    ul.appendChild(li);
+  }
+
+  var total    = todosLosArchivos.length;
+  var mostrado = lista.length;  document.getElementById('estado').innerHTML =
+    (mostrado === total)
+      ? total + ' archivo(s)'
+      : mostrado + ' de ' + total + ' archivo(s)';
+}
+
+function filtrar() {
+  var input  = document.getElementById('filtro');
+  var texto  = input ? input.value.toLowerCase() : '';
+  if (texto === '') { renderizar(todosLosArchivos); return; }
+  var result = [];
+  for (var i = 0; i < todosLosArchivos.length; i++) {
+    if (todosLosArchivos[i].nombre.toLowerCase().indexOf(texto) !== -1) {
+      result.push(todosLosArchivos[i]);
+    }
+  }
+  renderizar(result);
+}
+
+document.getElementById('subtitulo').innerHTML = window.location.href;
+
+renderizar(todosLosArchivos);
+
+</script>
+</body>
+</html>
