@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona una opción</title>
+    <link rel="icon" href="matias01jr.ico" type="image/x-icon">
+    <style>
+        /* Variables */
+        :root {
+            --primary-aqua: #7FFFD4;
+            --primary-dark: #004d40;
+            --card-bg: rgba(28, 28, 28, 0.65);
+            --text-light: #f0f0f0;
+            --shadow: rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Fondo solicitado: Minecraft.jpg */
+            background-image: url('Minecraft.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #111;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-light);
+            overflow: hidden;
+        }
+
+        /* Contenedor con efecto Glassmorphism */
+        .box {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px var(--shadow);
+            border: 2px solid var(--primary-aqua);
+            width: 320px;
+            animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            color: var(--primary-aqua);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Lista de botones vertical */
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .ia-button {
+            display: block;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--primary-dark);
+            background-color: var(--primary-aqua);
+            border-radius: 10px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Efectos de Hover inspirados en Matias01jr Games */
+        .ia-button:hover {
+            transform: translateY(-5px) scale(1.03);
+            background-color: #64e9c0;
+            box-shadow: 0 8px 20px rgba(127, 255, 212, 0.4);
+        }
+
+        .ia-button:active {
+            transform: translateY(1px);
+        }
+
+        /* Pequeño detalle de brillo animado similar a tu H1 */
+        .glow-text {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 2px var(--primary-aqua)); }
+            to { filter: drop-shadow(0 0 8px var(--primary-aqua)); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2 class="glow-text">Elige una opción</h2>
+        
+        <div class="button-list">
+            <a href="https://chatgpt.com" target="_blank" class="ia-button">ChatGPT</a>
+            <a href="https://gemini.google.com" target="_blank" class="ia-button">Gemini</a>
+            <a href="https://claude.ai" target="_blank" class="ia-button">Claude</a>
+        </div>
+    </div>
+
+</body>
+</html>
